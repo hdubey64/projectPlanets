@@ -83,17 +83,15 @@ const segments = 64;
 const orbitRadius = 4.5;
 const colors = [0x0077ff, 0x00ff00, 0xff0000, 0x0000ff];
 const texture = [
-   "public/resources/csilla/color.png",
-   "public/resources/earth/map.jpg",
-   "public/resources/venus/map.jpg",
-   "public/resources/volcanic/color.png",
+   "/resources/csilla/color.png",
+   "/resources/earth/map.jpg",
+   "/resources/venus/map.jpg",
+   "/resources/volcanic/color.png",
 ];
 
 const spheres = new THREE.Group();
 
-const starTexture = new THREE.TextureLoader().load(
-   "/public/resources/stars.jpg"
-);
+const starTexture = new THREE.TextureLoader().load("/resources/stars.jpg");
 starTexture.colorSpace = THREE.SRGBColorSpace;
 const starGeometry = new THREE.SphereGeometry(50, 64, 64);
 const starMaterial = new THREE.MeshStandardMaterial({
