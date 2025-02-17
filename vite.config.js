@@ -1,9 +1,11 @@
-// vite.config.js
 import { defineConfig } from "vite";
 
 export default defineConfig({
-   base: "./", // Ensures proper relative paths
+   base: "./", // Ensures assets are served correctly
    build: {
       outDir: "dist",
+   },
+   server: {
+      host: true, // Allows network access (optional)
    },
 });
